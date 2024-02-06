@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #title {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        #logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div id="title">
+        <img id="logo" src="C:\Users\TT User\Desktop\Yash\OIG1.Tkimm1clsabsiC9fovoq.jpg">
+        <span>Yash Calculator</span>
+    </div>
+
+<table border="1">
+  <tr>
+    <td colspan="4"><input type='text' id='result' class='screen'></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='1' onclick="display('1')" class="number"></td>
+    <td><input type='button' value='2' onclick="display('2')" class="number"></td>
+    <td><input type='button' value='3' onclick="display('3')" class="number"></td>
+    <td><input type='button' value='+' onclick="display('+')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='4' onclick="display('4')" class="number"></td>
+    <td><input type='button' value='5' onclick="display('5')" class="number"></td>
+    <td><input type='button' value='6' onclick="display('6')" class="number"></td>
+    <td><input type='button' value='-' onclick="display('-')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='7' onclick="display('7')" class="number"></td>
+    <td><input type='button' value='8' onclick="display('8')" class="number"></td>
+    <td><input type='button' value='9' onclick="display('9')" class="number"></td>
+    <td><input type='button' value='*' onclick="display('*')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='0' onclick="display('0')" class="number"></td>
+    <td><input type='button' value='.' onclick="display('.')" class="number"></td>
+    <td><input type='button' value='=' onclick="calculate()" class="operator"></td>
+    <td><input type='button' value='/' onclick="display('/')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='C' onclick="clearScreen()" class="clear"></td>
+    <td><input type='button' value='sin' onclick="trig('sin')" class="operator"></td>
+    <td><input type='button' value='cos' onclick="trig('cos')" class="operator"></td>
+    <td><input type='button' value='tan' onclick="trig('tan')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='cot' onclick="trig('cot')" class="operator"></td>
+    <td><input type='button' value='^' onclick="display('^')" class="operator"></td>
+    <td><input type='button' value='%' onclick="display('%')" class="operator"></td>
+    <td><input type='button' value='&' onclick="display('&')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='log' onclick="log()" class="operator"></td>
+    <td><input type='button' value='exp' onclick="exp()" class="operator"></td>
+    <td><input type='button' value='sqrt' onclick="sqrt()" class="operator"></td>
+    <td><input type='button' value='pi' onclick="display('π')" class="operator"></td>
+  </tr>
+  <tr>
+    <td><input type='button' value='(' onclick="display('(')" class="operator"></td>
+    <td><input type='button' value=')' onclick="display(')')" class="operator"></td>
+    <td><input type='button' value='!' onclick="factorial()" class="operator"></td>
+    <td><input type='button' value='e' onclick="display('e')" class="operator"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><input type='button' value='backspace' onclick="backspace()" class="operator"></td>
+  </tr>
+</table>
+
+<script src="app.js" defer></script>
+</body>
+</html>
