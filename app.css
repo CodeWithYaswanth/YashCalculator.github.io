@@ -3,7 +3,9 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5; /* Light background color */
+    border: 2px solid #000000; /* Black border */
 }
+
 
 #title {
     display: flex;
